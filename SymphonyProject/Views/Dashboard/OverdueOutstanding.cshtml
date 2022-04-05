@@ -1,0 +1,300 @@
+﻿<main id="main" class="main">
+
+    <div class="pagetitle">
+        <h1>OverDue Out Standing</h1>
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a asp-controller="Dashboard" asp-action="Index">Home</a></li>
+                <li class="breadcrumb-item active">OverDue Out Standing</li>
+            </ol>
+        </nav>
+    </div><!-- End Page Title -->
+
+
+    <section>
+        <div class="wrapper wrapper-content">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <div class="row">
+                                <div class="col-md-12" id="divGrid">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <table id="exampledatatable"
+                                                   class="table table-bordered exampledatatable no-footer dtr-inline dataTable" cellspacing="0"
+                                                   role="grid" style="width: 100%; background-color: rgb(235, 243, 249); margin-bottom: 0px;"
+                                                   aria-describedby="exampledatatable_info">
+                                                <thead>
+                                                    <tr role="row">
+                                                        <th width="5%" data-nosearchtext="no" class="no-sort notexport sorting_disabled"
+                                                            rowspan="1" colspan="1" aria-label="Action" style="width: 122px;">Action</th>
+                                                        <th width="10%" class="sorting" tabindex="0" aria-controls="exampledatatable" rowspan="1"
+                                                            colspan="1" aria-label="Team No: activate to sort column ascending"
+                                                            style="width: 220px;">
+                                                            Assignment
+                                                        </th>
+                                                        <th width="10%" class="sorting" tabindex="0" aria-controls="exampledatatable" rowspan="1"
+                                                            colspan="1" aria-label="Category: activate to sort column ascending"
+                                                            style="width: 220px;">
+                                                            Refrence
+                                                        </th>
+                                                        <th width="10%" class="sorting" tabindex="0" aria-controls="exampledatatable" rowspan="1"
+                                                            colspan="1" aria-label="Zone Number: activate to sort column ascending"
+                                                            style="width: 220px;">
+                                                            Dcoument No
+                                                        </th>
+                                                        <th width="5%" class="sorting" tabindex="0" aria-controls="exampledatatable" rowspan="1"
+                                                            colspan="1" aria-label="Location: activate to sort column ascending"
+                                                            style="width: 117px;">
+                                                            Doc Type
+                                                        </th>
+                                                        <th width="10%" class="sorting" tabindex="0" aria-controls="exampledatatable" rowspan="1"
+                                                            colspan="1" aria-label="Area: activate to sort column ascending" style="width: 221px;">
+                                                            Document Date
+                                                        </th>
+                                                        <th width="10%" class="sorting" tabindex="0" aria-controls="exampledatatable" rowspan="1"
+                                                            colspan="1" aria-label="Area: activate to sort column ascending" style="width: 221px;">
+                                                            Posting Date
+                                                        </th>
+                                                        <th width="10%" class="sorting" tabindex="0" aria-controls="exampledatatable" rowspan="1"
+                                                            colspan="1" aria-label="Area: activate to sort column ascending" style="width: 221px;">
+                                                            Ammount Doc Currency
+                                                        </th>
+                                                        <th width="10%" class="sorting" tabindex="0" aria-controls="exampledatatable" rowspan="1"
+                                                            colspan="1" aria-label="Area: activate to sort column ascending" style="width: 221px;">
+                                                            Document Currency
+                                                        </th>
+                                                        <th width="10%" class="sorting" tabindex="0" aria-controls="exampledatatable" rowspan="1"
+                                                            colspan="1" aria-label="Area: activate to sort column ascending" style="width: 221px;">
+                                                            Net Due Date
+                                                        </th>
+                                                    </tr>
+                                                    <!-- <tr role="row">
+                                                      <th width="5%" data-nosearchtext="no" class="no-sort notexport" rowspan="1" colspan="1">
+                                                      </th>
+                                                      <th width="10%" rowspan="1" colspan="1"><input type="text" class="form-control input-sm"
+                                                          placeholder="Search Team No"></th>
+                                                      <th width="10%" rowspan="1" colspan="1"><input type="text" class="form-control input-sm"
+                                                          placeholder="Search Category"></th>
+                                                      <th width="10%" rowspan="1" colspan="1"><input type="text" class="form-control input-sm"
+                                                          placeholder="Search Zone Number"></th>
+                                                      <th width="5%" rowspan="1" colspan="1"><input type="text" class="form-control input-sm"
+                                                          placeholder="Search Location"></th>
+                                                      <th width="10%" rowspan="1" colspan="1"><input type="text" class="form-control input-sm"
+                                                          placeholder="Search Area"></th>
+                                                      <th width="10%" rowspan="1" colspan="1"><input type="text" class="form-control input-sm"
+                                                          placeholder="Search Area"></th>
+                                                      <th width="10%" rowspan="1" colspan="1"><input type="text" class="form-control input-sm"
+                                                          placeholder="Search Area"></th>
+                                                    </tr> -->
+                                                </thead>
+                                                <tbody>
+
+                                                    <tr role="row" class="odd">
+                                                        <td nowrap="" class="hiddendata">
+                                                            <a href="/WorkPlaceManagementSystem/TeamRegistration/Index/17">
+                                                                <i class="fa fa-lg fa-pencil" title="Edit"></i>
+                                                            </a>
+                                                            <a href="/WorkPlaceManagementSystem/Review/ViewReview?paramRegId=17">
+                                                                <i class="fa fa-flag" title="Review"></i>
+                                                            </a>
+                                                            <a href="/WorkPlaceManagementSystem/Audit/ViewAudit?paramRegId=17">
+                                                                <i class="fa fa-check"></i>
+                                                            </a>
+
+                                                        </td>
+                                                        <td class="Edit_TeamNo">
+                                                            L2 POREBA 26-205 - 2021 - 17
+                                                        </td>
+                                                        <td class="Edit_Category">
+                                                            Category1
+                                                        </td>
+
+                                                        <td class="Edit_Zone">
+                                                            Zone1
+                                                        </td>
+                                                        <td class="Edit_Location">
+                                                            HZW
+                                                        </td>
+                                                        <td class="Edit_Area">
+                                                            L2 POREBA 26-205
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td nowrap="" class="hiddendata">
+                                                            <a href="/WorkPlaceManagementSystem/TeamRegistration/Index/16">
+                                                                <i class="fa fa-lg fa-pencil" title="Edit"></i>
+                                                            </a>
+                                                            <a href="/WorkPlaceManagementSystem/Review/ViewReview?paramRegId=16">
+                                                                <i class="fa fa-flag" title="Review"></i>
+                                                            </a>
+                                                            <a href="/WorkPlaceManagementSystem/Audit/ViewAudit?paramRegId=16">
+                                                                <i class="fa fa-check"></i>
+                                                            </a>
+
+                                                        </td>
+                                                        <td class="Edit_TeamNo">
+                                                            L2 POREBA 26-205 - 2022 - 16
+                                                        </td>
+                                                        <td class="Edit_Category">
+                                                            Category1
+                                                        </td>
+
+                                                        <td class="Edit_Zone">
+                                                            Zone1
+                                                        </td>
+                                                        <td class="Edit_Location">
+                                                            HZW
+                                                        </td>
+                                                        <td class="Edit_Area">
+                                                            L2 POREBA 26-205
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr role="row" class="odd">
+                                                        <td nowrap="" class="hiddendata">
+                                                            <a href="/WorkPlaceManagementSystem/TeamRegistration/Index/15">
+                                                                <i class="fa fa-lg fa-pencil" title="Edit"></i>
+                                                            </a>
+                                                            <a href="/WorkPlaceManagementSystem/Review/ViewReview?paramRegId=15">
+                                                                <i class="fa fa-flag" title="Review"></i>
+                                                            </a>
+                                                            <a href="/WorkPlaceManagementSystem/Audit/ViewAudit?paramRegId=15">
+                                                                <i class="fa fa-check"></i>
+                                                            </a>
+
+                                                        </td>
+                                                        <td class="Edit_TeamNo">
+                                                            L2 POREBA 26-212 - 2022 - 15
+                                                        </td>
+                                                        <td class="Edit_Category">
+                                                            Category2
+                                                        </td>
+
+                                                        <td class="Edit_Zone">
+                                                            Zone1
+                                                        </td>
+                                                        <td class="Edit_Location">
+                                                            HZW
+                                                        </td>
+                                                        <td class="Edit_Area">
+                                                            L2 POREBA 26-212
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td nowrap="" class="hiddendata">
+                                                            <a href="/WorkPlaceManagementSystem/TeamRegistration/Index/14">
+                                                                <i class="fa fa-lg fa-pencil" title="Edit"></i>
+                                                            </a>
+                                                            <a href="/WorkPlaceManagementSystem/Review/ViewReview?paramRegId=14">
+                                                                <i class="fa fa-flag" title="Review"></i>
+                                                            </a>
+                                                            <a href="/WorkPlaceManagementSystem/Audit/ViewAudit?paramRegId=14">
+                                                                <i class="fa fa-check"></i>
+                                                            </a>
+
+                                                        </td>
+                                                        <td class="Edit_TeamNo">
+                                                            L2 POREBA 26-205 - 2022 - 14
+                                                        </td>
+                                                        <td class="Edit_Category">
+                                                            Category1
+                                                        </td>
+
+                                                        <td class="Edit_Zone">
+                                                            Zone1
+                                                        </td>
+                                                        <td class="Edit_Location">
+                                                            HZW
+                                                        </td>
+                                                        <td class="Edit_Area">
+                                                            L2 POREBA 26-205
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr role="row" class="odd">
+                                                        <td nowrap="" class="hiddendata">
+                                                            <a href="/WorkPlaceManagementSystem/TeamRegistration/Index/13">
+                                                                <i class="fa fa-lg fa-pencil" title="Edit"></i>
+                                                            </a>
+                                                            <a href="/WorkPlaceManagementSystem/Review/ViewReview?paramRegId=13">
+                                                                <i class="fa fa-flag" title="Review"></i>
+                                                            </a>
+                                                            <a href="/WorkPlaceManagementSystem/Audit/ViewAudit?paramRegId=13">
+                                                                <i class="fa fa-check"></i>
+                                                            </a>
+
+                                                        </td>
+                                                        <td class="Edit_TeamNo">
+                                                            L2 POREBA 26-205 - 2022 - 13
+                                                        </td>
+                                                        <td class="Edit_Category">
+                                                            Category1
+                                                        </td>
+
+                                                        <td class="Edit_Zone">
+                                                            Zone1
+                                                        </td>
+                                                        <td class="Edit_Location">
+                                                            HZW
+                                                        </td>
+                                                        <td class="Edit_Area">
+                                                            L2 POREBA 26-205
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td nowrap="" class="hiddendata">
+                                                            <a href="/WorkPlaceManagementSystem/TeamRegistration/Index/12">
+                                                                <i class="fa fa-lg fa-pencil" title="Edit"></i>
+                                                            </a>
+                                                            <a href="/WorkPlaceManagementSystem/Review/ViewReview?paramRegId=12">
+                                                                <i class="fa fa-flag" title="Review"></i>
+                                                            </a>
+                                                            <a href="/WorkPlaceManagementSystem/Audit/ViewAudit?paramRegId=12">
+                                                                <i class="fa fa-check"></i>
+                                                            </a>
+
+                                                        </td>
+                                                        <td class="Edit_TeamNo">
+                                                            L2 POREBA 26-205 - 2021 - 12
+                                                        </td>
+                                                        <td class="Edit_Category">
+                                                            Category1
+                                                        </td>
+
+                                                        <td class="Edit_Zone">
+                                                            Zone1
+                                                        </td>
+                                                        <td class="Edit_Location">
+                                                            HZW
+                                                        </td>
+                                                        <td class="Edit_Area">
+                                                            L2 POREBA 26-205
+                                                        </td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="divManage" style="display: none;">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+</main><!-- End #main -->

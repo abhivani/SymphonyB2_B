@@ -1,0 +1,191 @@
+﻿@{
+    ViewData["Title"] = "DealerRegistration";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>
+        Symphony - Distributor Enquiry Form
+    </title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="~/assets/img/favicon.png" rel="icon">
+    <link href="~/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="~/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="~/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="~/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="~/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="~/assets/css/style.css" rel="stylesheet">
+
+
+    <!--Sweet Alert 2-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        function Submit() {
+            console.log('Hello');
+            Swal.fire(
+                'success',
+                'Your Enquiry has been Registred Sucessfully !!',
+                'success'
+            )
+            return true;
+        }
+    </script>
+
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top header-inner-pages">
+        <div class="container d-flex align-items-center">
+
+            <h1 class="logo me-auto"><a href="index.html"><img src="~/assets/WhatsApp Image 2022-03-15 at 12.45.40 PM.jpeg"></a></h1>
+            
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto" asp-controller="Home" asp-action="DealerRegistration">Become a Dealer</a></li>
+                    <li><a class="nav-link scrollto" asp-controller="Home" asp-action="Enquiry">Distributor Enquiry Form</a></li>
+                    <li><a class="getstarted scrollto" asp-controller="Home" asp-action="Login">Login</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header><!-- End Header -->
+
+    <main id="main" style="padding-top: 100px;">
+
+        <div class="row">
+            <div class="col-lg-2">
+                <br>
+            </div>
+
+            <div style="align-items: flex-start;" class="col-lg-8">
+
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Distributor Enquiry Form</h5>
+                        <br>
+
+                        <!-- Multi Columns Form -->
+                        <form asp-action="EnquiryForm" asp-controller="Home" class="row g-3">
+                            <div class="col-md-6">
+                                <label for="inputName5" class="form-label">Customer Name</label><span style="color:red">*</span>
+                                <input type="text" name="CustomerName" class="form-control" id="inputName5" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputPassword5" class="form-label">Email</label><span style="color:red">*</span>
+                                <input type="email" name="Email" class="form-control" id="inputPassword5" required>
+                            </div>
+                            <div class="col-6">
+                                <label for="inputAddress5" class="form-label">Mobile</label><span style="color:red">*</span>
+                                <input type="text" name="Mobile" class="form-control" id="inputAddres5s" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputState" class="form-label">Product</label><span style="color:red">*</span>
+                                <select id="inputState" name="Product" class="form-select" required>
+                                    <option selected>Choose...</option>
+                                    <option value="AIR Cooler A1501">AIR Cooler A1501</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="inputAddress2" class="form-label">Address</label><span style="color:red">*</span>
+                                <textarea type="text" name="Address" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" required></textarea>
+                            </div>
+                            <div class="col-md-5">
+                                <label for="inputState" class="form-label">State</label><span style="color:red">*</span>
+                                <select id="inputState" name="State" class="form-select" required>
+                                    <option selected value="null">Choose...</option>
+                                    <option value="Gujrat">Gujrat</option>
+                                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="inputCity" class="form-label">City</label><span style="color:red">*</span>
+                                <input type="text" name="City" class="form-control" id="inputCity" required>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="inputZip" class="form-label">Pin Code</label><span style="color:red">*</span>
+                                <input type="text" name="Pincode" class="form-control" id="inputZip" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="inputAddress2" class="form-label">
+                                    Remarks
+                                </label>
+                                <textarea type="text" name="Remarks" class="form-control" id="inputAddress2"></textarea>
+                            </div>
+
+                            <div class="text-center">
+                                <input type="submit" onclick="return Submit()" class="btn btn-success" value="submit" style="width: 50%;"></input>
+
+                            </div>
+
+                        </form><!-- End Multi Columns Form -->
+                        <br />
+                        @*<div class="text-center">
+             <button type="submit" onclick="submit()" class="btn btn-success" style="width: 50%;">da</button>
+
+        </div>*@
+                       
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-2">
+                <br>
+            </div>
+        </div>
+
+
+
+
+    </main>
+    <!-- End #main -->
+
+
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="~/assets/vendor/aos/aos.js"></script>
+    <script src="~/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="~/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="~/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="~/assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="~/assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="~/assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+﻿<main id="main" class="main">
+
+    <div class="pagetitle">
+        <h1>Generate Order</h1>
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a asp-controller="Dashboard" asp-action="Index">Home</a></li>
+                <li class="breadcrumb-item active">Generate Order</li>
+            </ol>
+        </nav>
+    </div><!-- End Page Title -->
+    
+    <div class="container">
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="mt-2 col-sm-4 mb-4">
+                        <div class="form-group">
+                            <label>Sold to Party</label>
+                            <input type="text" name="name" class="form-control" placeholder="Enter Sold To Party">
+                        </div>
+                    </div>
+                    <div class="mt-2 col-sm-4 mb-4">
+                        <div class="form-group">
+                            <label>Ship to Party</label>
+                            <input type="text" name="name" class="form-control" placeholder="Enter Ship To Party">
+                        </div>
+                    </div>
+                    <div class="mt-2 col-sm-4 mb-4">
+                        <div class="form-group">
+                            <label>Currency</label>
+                            <input type="text" name="name" class="form-control" placeholder="Enter Currency">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="mt-1 col-sm-4 mb-4">
+                        <div class="form-group">
+                            <label>Incoterms</label>
+                            <input type="text" name="name" class="form-control" placeholder="Enter Incoterms">
+                        </div>
+                    </div>
+                    <div class="mt-2 col-sm-4 mb-4">
+                        <div class="form-group">
+                            <label>Incoterms Location 1</label>
+                            <input type="text" name="name" class="form-control" placeholder="Enter Incoterms Location 1">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="mt-4 row">
+                    <div class="col-sm-10 md-10"></div>
+                    <div class="col-sm-2 md-2">
+                        <button class="btn btn-success" type="submit" name="submit">Add Item</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="mt-2 col-md-12" id="divGrid">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <table id="exampledatatable"
+                                       class="table table-bordered exampledatatable no-footer dtr-inline dataTable" cellspacing="0"
+                                       role="grid" style="width: 100%; background-color: rgb(235, 243, 249); margin-bottom: 0px;"
+                                       aria-describedby="exampledatatable_info">
+                                    <thead>
+                                        <tr role="row">
+                                            <th width="5%" data-nosearchtext="no" class="no-sort notexport sorting_disabled"
+                                                rowspan="1" colspan="1" aria-label="Action" style="width: 122px;">Action</th>
+                                            <th width="10%" class="sorting" tabindex="0" aria-controls="exampledatatable" rowspan="1"
+                                                colspan="1" aria-label="Team No: activate to sort column ascending"
+                                                style="width: 220px;">
+                                                Item No
+                                            </th>
+                                           
+                                            <th width="5%" class="sorting" tabindex="0" aria-controls="exampledatatable" rowspan="1"
+                                                colspan="1" aria-label="Location: activate to sort column ascending"
+                                                style="width: 117px;">
+                                                Material
+                                            </th>
+                                            <th width="10%" class="sorting" tabindex="0" aria-controls="exampledatatable" rowspan="1"
+                                                colspan="1" aria-label="Area: activate to sort column ascending" style="width: 221px;">
+                                                Date
+                                            </th>
+                                            <th width="10%" class="sorting" tabindex="0" aria-controls="exampledatatable" rowspan="1"
+                                                colspan="1" aria-label="Area: activate to sort column ascending" style="width: 221px;">
+                                                Quantity
+                                            </th>
+                                            <th width="10%" class="sorting" tabindex="0" aria-controls="exampledatatable" rowspan="1"
+                                                colspan="1" aria-label="Area: activate to sort column ascending" style="width: 221px;">
+                                                MRP
+                                            </th>
+                                            <th width="10%" class="sorting" tabindex="0" aria-controls="exampledatatable" rowspan="1"
+                                                colspan="1" aria-label="Area: activate to sort column ascending" style="width: 221px;">
+                                                Amount
+                                            </th>
+                                            <th width="10%" class="sorting" tabindex="0" aria-controls="exampledatatable" rowspan="1"
+                                                colspan="1" aria-label="Area: activate to sort column ascending" style="width: 221px;">
+                                                Rate
+                                            </th>
+                                            <!-- <th width="10%" class="sorting" tabindex="0" aria-controls="exampledatatable" rowspan="1"
+                                              colspan="1" aria-label="Area: activate to sort column ascending" style="width: 221px;">
+                                             GST Tax
+                                            </th>  -->
+                                        </tr>
+
+                                    </thead>
+                                    <tbody>
+
+                                        <tr role="row" class="odd">
+                                            <td nowrap="" class="hiddendata">
+                                                <a href="#"><i class="bi bi-pencil-fill"></i></a>&nbsp;&nbsp;
+                                                <a href="#">
+                                                    <i class="fa fa-flag" title="Review"></i>
+                                                </a>
+                                                <a href="#"><i class="bi bi-trash-fill"></i></a>
+
+                                            </td>
+                                            <td class="Edit_TeamNo">
+                                                L2 POREBA
+                                            </td>
+                                            <td class="Edit_Category">
+                                                Air Cooler
+                                            </td>
+
+                                            <td class="Edit_Zone">
+                                                23/03/2022
+                                            </td>
+                                            <td class="Edit_Location">
+                                                50
+                                            </td>
+                                            <td class="Edit_Area">
+                                                500000
+                                            </td>
+                                            <td class="Edit_Area">
+                                                480000
+                                            </td>
+                                            <td class="Edit_Area">
+                                                480000
+                                            </td>
+
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="wrapper wrapper-content">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <div class="row">
+                                <div class="col-md-12" id="divGrid">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <table id="exampledatatable"
+                                                   class="table table-bordered exampledatatable no-footer dtr-inline dataTable" cellspacing="0"
+                                                   role="grid" style="width: 100%; background-color: rgb(235, 243, 249); margin-bottom: 0px;"
+                                                   aria-describedby="exampledatatable_info">
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-sm-12 md-12">
+                                            <div class="row-card"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="divManage" style="display: none;">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+</main><!-- End #main -->
